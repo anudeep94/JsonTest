@@ -8,10 +8,10 @@
 
 #import "MeetupCommunicatorDelegate.h"
 
-/*@protocol MeetupCommunicatorDelegate
+@protocol MeetupCommunicatorDelegate
 - (void)receivedGroupsJSON:(NSData *)objectNotation;
 - (void)fetchingGroupsFailedWithError:(NSError *)error;
-@end*/
+@end
 
 
 @implementation MeetupCommunicatorDelegate

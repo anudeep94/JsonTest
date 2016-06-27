@@ -19,6 +19,7 @@
     self.locationManager = [[CLLocationManager alloc] init];
     if ([CLLocationManager locationServicesEnabled]) {
         [self.locationManager setDelegate:self];
+        [self.locationManager requestWhenInUseAuthorization];
         [self.locationManager startUpdatingLocation];
     }
     
@@ -29,7 +30,7 @@
 
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
 {
-    if (status == kCLAuthorizationStatusAuthorized) {
+    if (status == kCLAuthorizationStatusAuthorizedWhenInUse) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"kCLAuthorizationStatusAuthorized" object:self];
     }
 }

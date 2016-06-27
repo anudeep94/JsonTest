@@ -11,11 +11,11 @@
 
 #import "MeetupManagerDelegate.h"
 #import "MeetupCommunicatorDelegate.h"
-#import "MeetupCommunicator.m"
+#import "MeetupCommunicator.h"
 
 @class MeetupCommunicator;
 
-@interface MeetupManager : NSObject<MeetupCommunicatorDelegate>
+@interface MeetupManager : NSObject <MeetupCommunicatorDelegate>
 @property (strong, nonatomic) MeetupCommunicator *communicator;
 @property (weak, nonatomic) id<MeetupManagerDelegate>delegate;
 

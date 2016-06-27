@@ -8,13 +8,12 @@
 
 #import "MeetupManager.h"
 #import "GroupBuilder.h"
-#import "MeetupCommunicator.h"
+
 
 
 @implementation MeetupManager
 -(void)fetchGroupsAtCoordinate:(CLLocationCoordinate2D)coordinate
 {
-    
     [self.communicator searchGroupsAtCoordinate :coordinate];
 }
 #pragma mark - MaeetupCommunicatorDelegate
@@ -30,18 +29,11 @@
     }else{
         
         [self.delegate didReceiveGroups:groups];
-        
     }
 }
 
 -(void) fetchingGroupsFailedWithError:(NSError *)error
 {
-    
     [self.delegate fetchingGroupsFailedWithError:error];
 }
-
-
-
-
 @end
-

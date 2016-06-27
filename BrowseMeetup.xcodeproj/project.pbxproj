@@ -26,6 +26,7 @@
 		84F330441D1E72DF00E14909 /* MeetupManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F330431D1E72DF00E14909 /* MeetupManagerDelegate.m */; };
 		84F3F3FA1D1E90CD00057DDF /* MeetupManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F3F3F91D1E90CD00057DDF /* MeetupManager.m */; };
 		84F3F3FD1D1E951100057DDF /* MeetupCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F3F3FC1D1E951100057DDF /* MeetupCommunicator.m */; };
+		84FB5AFC1D20F249009A3D76 /* Sample.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FB5AFB1D20F249009A3D76 /* Sample.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,8 @@
 		84F3F3F91D1E90CD00057DDF /* MeetupManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeetupManager.m; path = ../MeetupManager.m; sourceTree = "<group>"; };
 		84F3F3FB1D1E951100057DDF /* MeetupCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeetupCommunicator.h; path = ../MeetupCommunicator.h; sourceTree = "<group>"; };
 		84F3F3FC1D1E951100057DDF /* MeetupCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeetupCommunicator.m; path = ../MeetupCommunicator.m; sourceTree = "<group>"; };
+		84FB5AFA1D20F249009A3D76 /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sample.h; path = "Browse Meetup/Sample.h"; sourceTree = "<group>"; };
+		84FB5AFB1D20F249009A3D76 /* Sample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sample.m; path = "Browse Meetup/Sample.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 		4EFE4B6817BE879700DD023B = {
 			isa = PBXGroup;
 			children = (
+				84FB5AFA1D20F249009A3D76 /* Sample.h */,
+				84FB5AFB1D20F249009A3D76 /* Sample.m */,
 				4EFE4B7A17BE879700DD023B /* Read JSON */,
 				4EFE4B7317BE879700DD023B /* Frameworks */,
 				4EFE4B7217BE879700DD023B /* Products */,
@@ -222,6 +227,7 @@
 				4EFE4BB017BEC48C00DD023B /* DetailCell.m in Sources */,
 				84F330401D1E64BE00E14909 /* GroupBuilder.m in Sources */,
 				84F330441D1E72DF00E14909 /* MeetupManagerDelegate.m in Sources */,
+				84FB5AFC1D20F249009A3D76 /* Sample.m in Sources */,
 				84F330391D1E581300E14909 /* MeetupCommunicatorDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,6 @@
 
 @implementation GroupBuilder
 
-
 +(NSArray *)groupFromJSON:(NSData *)objectNotation error:(NSError **) error
 {
     NSError *localError = nil;
@@ -25,14 +24,19 @@
     NSMutableArray *groups = [[NSMutableArray alloc] init];
     
     NSArray *results = [parsedObject valueForKey:@"results"];
-    NSLog(@"Count %lu", (unsigned long)results.count);
+    NSLog(@"Count %d", results.count);
     
     for (NSDictionary *groupDic in results) {
         Group *group = [[Group alloc] init];
         
         for (NSString *key in groupDic) {
             if ([group respondsToSelector:NSSelectorFromString(key)]) {
-                [group setValue:[groupDic valueForKey:key] forKey:key];
+                
+                NSString *newKey = key;
+                if ([key isEqualToString:@"description"]) {
+                    newKey = @"descript";
+                }
+                [group setValue:[groupDic valueForKey:key] forKey:newKey];
             }
         }
         
